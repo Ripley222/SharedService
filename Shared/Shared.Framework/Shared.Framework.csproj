@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Shared.SharedKernel\Shared.SharedKernel.csproj" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <TargetFramework>.net9.0</TargetFramework>
+        <PackageId>ServicesProject.Framework</PackageId>
+        <Version>0.0.2</Version>
+        <Authors>Petrunyak Nikita</Authors>
+        <Company>Rec-Play-Pause</Company>
+        <PackageDescription>SharedService</PackageDescription>
+        <RepositoryUrl>https://github.com/Rec-Play-Pause</RepositoryUrl>
+    </PropertyGroup>
+    
+</Project>
