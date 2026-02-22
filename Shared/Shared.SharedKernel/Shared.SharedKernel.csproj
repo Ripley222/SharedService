@@ -10,11 +10,15 @@
       <PackageReference Include="CSharpFunctionalExtensions" Version="3.6.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Extensions\" />
+    </ItemGroup>
+
     <PropertyGroup>
         <OutputType>Library</OutputType>
         <TargetFramework>.net9.0</TargetFramework>
         <PackageId>ServicesProject.SharedKernel</PackageId>
-        <Version>0.0.1</Version>
+        <Version>0.0.5</Version>
         <Authors>Petrunyak Nikita</Authors>
         <Company>Rec-Play-Pause</Company>
         <PackageDescription>SharedService</PackageDescription>

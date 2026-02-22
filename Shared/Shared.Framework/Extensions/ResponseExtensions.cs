@@ -24,7 +24,7 @@ public static class ResponseExtensions
         
         var statusCode = distinctErrorTypes.Count > 1
             ? StatusCodes.Status500InternalServerError
-            : GetStatusCode(distinctErrorTypes.First());
+            : distinctErrorTypes.First().GetStatusCode();
 
         var envelope = Envelope.Error(errorList);
 
@@ -33,14 +33,4 @@ public static class ResponseExtensions
             StatusCode = statusCode
         };
     }
-
-    private static int GetStatusCode(ErrorType errorType) =>
-        errorType switch
-        {
-            ErrorType.Validation => StatusCodes.Status400BadRequest,
-            ErrorType.NotFound => StatusCodes.Status404NotFound,
-            ErrorType.Conflict => StatusCodes.Status409Conflict,
-            ErrorType.Failure => StatusCodes.Status500InternalServerError,
-            _ => StatusCodes.Status500InternalServerError
-        };
 }
