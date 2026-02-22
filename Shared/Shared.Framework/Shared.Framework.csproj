@@ -18,7 +18,7 @@
         <OutputType>Library</OutputType>
         <TargetFramework>.net9.0</TargetFramework>
         <PackageId>ServicesProject.Framework</PackageId>
-        <Version>0.0.2</Version>
+        <Version>0.0.6</Version>
         <Authors>Petrunyak Nikita</Authors>
         <Company>Rec-Play-Pause</Company>
         <PackageDescription>SharedService</PackageDescription>
